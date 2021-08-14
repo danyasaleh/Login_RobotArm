@@ -13,3 +13,5 @@ user need to enter ( username and password ) and if the informations correct it 
 **loginntest.php :** php page that contain database connection and a function that check if the user valid or not
 
 **login page.png :** photo of the login page
+
+**login Database.png :** photo of the login Database that contain 2 columns ( username , password )
