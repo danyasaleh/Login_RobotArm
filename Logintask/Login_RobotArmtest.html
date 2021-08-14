@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+   /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #56b7f0;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #c1dcff;
+}
+
+/* Two-column layout */
+.col {
+ 
+ width: 50%;
+ margin: auto;
+ padding: 0 50px;
+ margin-top: 6px;
+}
+
+
+
+/* vertical line */
+.vl {
+ position: absolute;
+ left: 50%;
+ transform: translate(-50%);
+ border: 2px solid #ddd;
+ height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+ position: absolute;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ background-color: #f1f1f1;
+ border: 1px solid #ccc;
+ border-radius: 50%;
+ padding: 8px 10px;
+}
+
+
+/* bottom container */
+.bottom-container {
+ text-align: center;
+ background-color: #666;
+ border-radius: 0px 0px 4px 4px;
+}
+
+
+
+ /* company photo  */
+img{
+    width: 150px;
+    height: 150px;
+}
+
+ /* Menu bar  */
+div.menu {
+margin-bottom: 30px;
+  background-color:#666;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.menu a:hover {
+  background-color: rgb(221, 218, 218);
+}
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+
+<img src="SM.jpeg" alt="smart methods company" >
+
+<div class="menu">
+    <a href="#about">About us</a>
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+<div class="container">
+  <form action="loginntest.php" method="POST">
+    <div class="row">
+      <h2 style="text-align:center">Login</h2>
+   
+
+      <div class="col">
+        <input type="text" name="usernamee" id="usn" value="" placeholder="Username" required>
+        <input type="password" name="password" id="ps" value="" placeholder="Password" required>
+        <input type="submit" value="Login" onclick="checkUser">
+      </div>
+      
+    </div>
+  </form>
+</div>
+
+
+<div class="bottom-container">
+  <div class="row">
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Sign up</a>
+    </div>
+    <div class="col">
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
+    </div>
+  </div>
+</div>
+<script>
+    function checkUser(v, p){
+        document.getElementById(usn).value=v;
+        document.getElementsById(ps).value=p;
+    }
+</script>
+</body>
+
+
+</html>

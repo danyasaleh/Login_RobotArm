@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    
+      <style>
+      Button{
+          width: 100px;
+          height: 40px;
+        font-weight: bold;
+          background-color: cornsilk;
+      }
+      
+      label{
+          font-family: serif;
+          font-size: 20px;
+          color: darkblue;
+          font-weight: bold;
+      }
+      body{
+          background-color: #D9ECFF;
+      }
+          
+          @viewport{
+              zoom: 1.0;
+              width: extend-to-zoom; 
+          }
+          
+            @-ms-viewport{
+              zoom: 1.0;
+              width: extend-to-zoom;
+          }
+    </style>
+<body>
+
+<h1 style="margin-left:500px">Choose a Motor </h1>
+
+<form action="Task1motor.php" method="POST">
+    
+  <label for="motor1" style="margin-left:440px">Motor 1 (between 0 and 180):  </label>
+  <input type="range" id="motor1"  min="0" max="180" onchange="updateTextInput1(this.value);">
+ <input type="text" id="textInput1" name="motor1" value="">
+   
+    <br> <br>
+  <label for="motor2" style="margin-left:440px">Motor 2 (between 0 and 180):  </label>
+  <input type="range" id="motor2"  min="0" max="180" onchange="updateTextInput2(this.value);">
+   <input type="text" id="textInput2" name="motor2" value="">
+    <br> <br>
+  <label for="motor3" style="margin-left:440px">Motor 3 (between 0 and 180):  </label>
+  <input type="range" id="motor3"  min="0" max="180" onchange="updateTextInput3(this.value);">
+    <input type="text" id="textInput3" name="motor3" value="">
+    <br> <br>
+  <label for="motor4" style="margin-left:440px">Motor 4 (between 0 and 180):  </label>
+  <input type="range" id="motor4"  min="0" max="180" onchange="updateTextInput4(this.value);">
+   <input type="text" id="textInput4" name="motor4" value="">
+    <br> <br>
+  <label for="motor5" style="margin-left:440px">Motor 5 (between 0 and 180):  </label>
+  <input type="range" id="motor5"  min="0" max="180" onchange="updateTextInput5(this.value);">
+    <input type="text" id="textInput5" name="motor5" value="">
+    <br> <br>
+  <label for="motor6" style="margin-left:440px">Motor 6 (between 0 and 180):  </label>
+  <input type="range" id="motor6"  min="0" max="180" onchange="updateTextInput6(this.value);">
+    <input type="text" id="textInput6" name="motor6" value="">
+    <br> <br>
+    
+    <button  name="on" value="0" style="margin-left:600px"> Save </button>
+    <button  name="on" value="" id="turnon_btn" onclick="turn();"> Turn ON </button>
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+     <br>
+    <br>
+    <br>
+    
+            <Label  ID="Label1" style="margin-left:500px"> Use the control below to move your robot </Label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Button  ID="f_btn"  name="direction" value="F" Font-Bold="True" Text="Forward" style="margin-left:600px"> Forward </Button>
+
+       
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Button ID="l_btn" name="direction" value="L" Font-Bold="True" Text="Left" style="margin-left:440px"> Left </Button>
+
+        <Button ID="s_btn"  name="direction" value="S" Font-Bold="True" Text="Stop" style="margin-left:60px"> Stop </Button>
+
+        <Button ID="r_btn" name="direction" value="R" Font-Bold="True" Text="Right" style="margin-left:70px" > Right </Button>
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <Button ID="b_btn"  name="direction" value="B" Font-Bold="True" Text="Backward" style="margin-left:600px" > Backward </Button>
+</form>
+    
+
+
+ 
+  
+
+</body>
+</html>
