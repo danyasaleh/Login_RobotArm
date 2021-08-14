@@ -11,3 +11,5 @@ user need to enter ( username and password ) and if the informations correct it 
 **Login_RobotArmtest.html :** contain the desgin of the login page by using html tags
 
 **loginntest.php :** php page that contain database connection and a function that check if the user valid or not
+
+**login page.png :** photo of the login page
