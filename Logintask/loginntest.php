@@ -23,10 +23,6 @@ if($count >0){
     echo"username or password is wrong!!";
 }
 
-
-// execute the query
-//$stat->execute();
-
     
 
 // close the statment and the connection
