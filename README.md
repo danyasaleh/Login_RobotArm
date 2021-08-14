@@ -14,4 +14,4 @@ user need to enter ( username and password ) and if the informations correct it 
 
 **login page.png :** photo of the login page
 
-**login Database.png :** photo of the login Database that contain 2 columns ( username , password )
+**login Database.png :** photo of the Database [login table] that contain 2 columns ( username , password )
